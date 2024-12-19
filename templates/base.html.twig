@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Examen Symfony{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ path('niveau_list') }}">Niveaux</a></li>
+                <li><a href="{{ path('classe_list') }}">Classes</a></li>
+                <li><a href="{{ path('etudiant_list') }}">Etudiants</a></li>
+                <li><a href="{{ path('professeur_list') }}">Professeurs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+</body>
+</html>

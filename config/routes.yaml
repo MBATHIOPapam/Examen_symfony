@@ -1,0 +1,34 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+# config/routes.yaml
+
+niveau:
+    resource: '../src/Controller/NiveauController.php'
+    type: annotation
+
+classe:
+    resource: '../src/Controller/ClasseController.php'
+    type: annotation
+
+etudiant:
+    resource: '../src/Controller/EtudiantController.php'
+    type: annotation
+
+professeur:
+    resource: '../src/Controller/ProfesseurController.php'
+    type: annotation
+
+module:
+    resource: '../src/Controller/ModuleController.php'
+    type: annotation
+
+cours:
+    resource: '../src/Controller/CoursController.php'
+    type: annotation
+
+session:
+    resource: '../src/Controller/SessionController.php'
+    type: annotation

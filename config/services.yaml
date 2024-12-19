@@ -1,0 +1,42 @@
+# config/services.yaml
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    App\Service\NiveauService: ~
+    App\Service\ClasseService: ~
+    App\Service\EtudiantService: ~
+    App\Service\ProfesseurService: ~
+    App\Service\ModuleService: ~
+    App\Service\CoursService: ~
+    App\Service\SessionService: ~
+    
+    App\Controller\NiveauController:
+        arguments:
+            $niveauService: '@App\Service\NiveauService'
+            
+    App\Controller\ClasseController:
+        arguments:
+            $classeService: '@App\Service\ClasseService'
+    
+    App\Controller\EtudiantController:
+        arguments:
+            $etudiantService: '@App\Service\EtudiantService'
+
+    App\Controller\ProfesseurController:
+        arguments:
+            $professeurService: '@App\Service\ProfesseurService'
+
+    App\Controller\ModuleController:
+        arguments:
+            $moduleService: '@App\Service\ModuleService'
+
+    App\Controller\CoursController:
+        arguments:
+            $coursService: '@App\Service\CoursService'
+
+    App\Controller\SessionController:
+        arguments:
+            $sessionService: '@App\Service\SessionService'

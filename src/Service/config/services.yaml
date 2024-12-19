@@ -1,0 +1,8 @@
+services:
+    App\Service\NiveauService: ~
+    App\Service\ClasseService: ~
+    App\Service\EtudiantService: ~
+    App\Service\ProfesseurService: ~
+    App\Service\ModuleService: ~
+    App\Service\CoursService: ~
+    App\Service\SessionService: ~
